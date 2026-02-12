@@ -6,8 +6,8 @@ icon: material/account-group
 ## 🏛️ Liderança e Coordenação
 <div class="card-grid">
     <div class="project-card">
-        <h3 style="margin-top:0; color:#800020">Nome do Líder (PI)</h3>
-        <p><strong>Cargo:</strong> Pesquisador Principal</p>
+        <h3 style="margin-top:0; color:#800020">Rodrigo Augusto Foganholi da Silva (PI)</h3>
+        <p><strong>Cargo:</strong> Pesquisador líder</p>
         <p style="font-size: 0.9rem; opacity: 0.8">Coordenação Geral e Docente Responsável.</p>
         <hr>
         <div class="contact-buttons">
