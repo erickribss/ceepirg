@@ -1,0 +1,37 @@
+
+site_name: "Laboratório CEEPIRG"
+site_url: https://erickribss.github.io/ceepirg
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette: 
+    - scheme: default
+      primary: black
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Modo Escuro
+    - scheme: slate
+      primary: black
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Modo Claro
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - Home: index.md
+  - Projetos: projetos.md
+  - Publicações: publicacoes.md
+  - Bolsas: bolsas.md
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
