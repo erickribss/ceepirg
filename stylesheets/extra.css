@@ -8,7 +8,7 @@
 .hero-section {
     text-align: center;
     padding: 8rem 1rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('../assets/capa.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://ibb.co/srwFRVT");
     background-size: cover;
     background-position: center;
     border-radius: 0 0 25px 25px;
