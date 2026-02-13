@@ -6,21 +6,21 @@
 
 /* Hero Section Ajustada */
 .hero-section {
-    /* 1. Define uma altura mínima grande para mostrar bem a foto */
-    min-height: 60vh; /* Ocupa 60% da altura da tela */
+    /* VOLTAMOS PARA UMA ALTURA CONTROLADA (NÃO GIGANTE) */
+    height: 450px; /* Altura fixa para garantir que a logo não dê zoom excessivo */
     
-    /* 2. Alinhamento Inteligente (Flexbox) */
+    /* MÁGICA DA POSIÇÃO: Joga o texto lá para o rodapé */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* EMPURRA O TEXTO PARA BAIXO */
+    justify-content: flex-end; /* Texto vai para baixo */
     align-items: center;
-    padding-bottom: 3rem; /* Espaço entre o texto e a borda de baixo */
+    padding-bottom: 3rem; /* Distância do texto até a borda inferior */
     
-    /* 3. Gradiente Suave (Mais transparente em cima para ver a logo, mais escuro embaixo para ler o texto) */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.9) 100%), url('https://i.ibb.co/JP7ztsY/logo-ceepirg.webp');
+    /* Fundo escurecido apenas na parte de baixo para o texto aparecer */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.95) 100%), url('https://i.ibb.co/JP7ztsY/logo-ceepirg.webp');
     
     background-size: cover;
-    background-position: center;
+    background-position: center top; /* Foca no topo/centro da imagem onde está a logo */
     background-repeat: no-repeat;
     
     border-radius: 0 0 25px 25px;
@@ -29,12 +29,12 @@
 }
 
 .hero-title {
-    /* 4. Fonte menor para não brigar com a logo */
-    font-size: 2.2rem; /* Reduzi de 3.5rem para 2.2rem */
-    font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    /* Restaurando o tamanho grande e imponente */
+    font-size: 3.5rem; 
+    font-weight: 900;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9); /* Sombra forte para ler bem em cima da foto */
     margin-bottom: 0.5rem;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 /* Estilo dos Cards */
