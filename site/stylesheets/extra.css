@@ -8,9 +8,14 @@
 .hero-section {
     text-align: center;
     padding: 8rem 1rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://ibb.co/srwFRVT");
-    background-size: cover;
-    background-position: center;
+    
+    /* AQUI ESTÁ A MÁGICA: O Gradiente escuro por cima da foto para o texto branco ler */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('https://i.ibb.co/JP7ztsY/logo-ceepirg.webp');
+    
+    background-size: cover;       /* Faz a imagem cobrir todo o espaço */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não deixa a imagem repetir */
+    
     border-radius: 0 0 25px 25px;
     margin-bottom: 2rem;
     color: white;
