@@ -1,20 +1,27 @@
 
 :root {
-    --md-accent-fg-color: #800020; /* BORDÔ */
+    --md-accent-fg-color: #800020;
     --md-primary-fg-color: #000000;
 }
 
-/* Hero Section com Foto de Fundo */
+/* Hero Section Ajustada */
 .hero-section {
-    text-align: center;
-    padding: 8rem 1rem;
+    /* 1. Define uma altura mínima grande para mostrar bem a foto */
+    min-height: 60vh; /* Ocupa 60% da altura da tela */
     
-    /* AQUI ESTÁ A MÁGICA: O Gradiente escuro por cima da foto para o texto branco ler */
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('https://i.ibb.co/JP7ztsY/logo-ceepirg.webp');
+    /* 2. Alinhamento Inteligente (Flexbox) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* EMPURRA O TEXTO PARA BAIXO */
+    align-items: center;
+    padding-bottom: 3rem; /* Espaço entre o texto e a borda de baixo */
     
-    background-size: cover;       /* Faz a imagem cobrir todo o espaço */
-    background-position: center;  /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não deixa a imagem repetir */
+    /* 3. Gradiente Suave (Mais transparente em cima para ver a logo, mais escuro embaixo para ler o texto) */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.9) 100%), url('https://i.ibb.co/JP7ztsY/logo-ceepirg.webp');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
     border-radius: 0 0 25px 25px;
     margin-bottom: 2rem;
@@ -22,10 +29,12 @@
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 900;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    margin-bottom: 10px;
+    /* 4. Fonte menor para não brigar com a logo */
+    font-size: 2.2rem; /* Reduzi de 3.5rem para 2.2rem */
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 /* Estilo dos Cards */
@@ -57,7 +66,6 @@
     border-color: #800020 !important;
 }
 
-/* Layout dos botões de contato na equipe */
 .contact-buttons {
     display: flex;
     gap: 10px;
